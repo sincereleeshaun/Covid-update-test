@@ -1,3 +1,5 @@
+![](NUS-Fintech-lab-web.jpg)
+
 # Covid-update API using Docker containers
 
 ### Starting requirements
