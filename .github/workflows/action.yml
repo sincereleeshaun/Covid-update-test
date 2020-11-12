@@ -27,9 +27,9 @@ jobs:
     - name: Run Docker Container 
       run: docker run -d -p 8000:8080 covid_update 
 
-    # - name: Troubleshooting
-    #   run: docker network inspect covid_update | grep "IPAddress"
-
+    - name: Troubleshooting
+      run: ip addr show docker0
+      
     - name: Call API
       uses: wei/curl@master
       with:
