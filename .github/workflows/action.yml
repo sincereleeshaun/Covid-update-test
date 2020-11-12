@@ -27,6 +27,10 @@ jobs:
     - name: Run Docker Container 
       run: docker run -d -p 8080:8080 covid_update 
 
+    - name: Run Docker Container 
+      run: docker inspect covid_update
+
+
     - name: curl
       uses: wei/curl@master
       with:
