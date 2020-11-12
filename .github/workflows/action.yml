@@ -25,7 +25,7 @@ jobs:
       run: docker build -t covid_update .
 
     - name: Run Docker Container 
-      run: docker run -d -p 8080:8080 covid_update 
+      run: docker run -d -p 172.17.0.1:8080:8080/tcp covid_update 
 
     - name: Troubleshooting
       run: ip addr show docker0
