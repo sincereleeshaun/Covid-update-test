@@ -28,7 +28,7 @@ jobs:
       run: docker run -d -p 8080:8080 covid_update 
 
     - name: Run Docker Container 
-      run: docker inspect covid_update
+      run: docker inspect covid_update | grep "IPAddress"
 
 
     - name: curl
